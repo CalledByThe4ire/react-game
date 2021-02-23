@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
 export default createGlobalStyle`
+${(props) => css`
   html {
     height: 100%;
 
@@ -12,8 +13,8 @@ export default createGlobalStyle`
 
       #root {
         display: flex;
-        background: radial-gradient(#282c34cc, #282c34);
-        color: #282c34;
+        background: ${props.theme.colors.background};
+        color: ${props.theme.colors.black};
         font-family: sans-serif;
         height: 100%;
         justify-content: center;
@@ -21,4 +22,5 @@ export default createGlobalStyle`
       }
     }
   }
+`}
 `;
