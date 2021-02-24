@@ -18,6 +18,7 @@ ${(props) => css`
         font-family: sans-serif;
         height: 100%;
         justify-content: center;
+        align-items: center;
         padding: 15px;
       }
     }

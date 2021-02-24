@@ -4,12 +4,18 @@ import { ThemeProvider } from 'styled-components';
 
 import { unregister } from './core';
 import { GlobalStyles, theme } from './styles';
+import { Content, Title, Card, Grid } from './components';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <div>Hello World!</div>
+      <Content data-cy="content">
+        <Title data-cy="title">Sudoku</Title>
+        <Card data-cy="card">
+          <Grid />
+        </Card>
+      </Content>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
