@@ -2,9 +2,12 @@ import React, { FC, Children } from 'react';
 
 import Block from './block';
 import { Container, Row } from './styles';
+import { createFullGrid } from '../../utils';
 
 const Grid: FC = () => {
-  // Other stuff on the way
+  const grid = createFullGrid();
+
+  console.log(grid);
 
   return (
     <Container data-cy="grid-container">

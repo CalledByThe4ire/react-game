@@ -8,7 +8,7 @@ interface BlockProps {
 }
 
 const Block: FC<BlockProps> = ({ colIndex, rowIndex }) => {
-  return <Container data-cy={`block-${rowIndex}-${colIndex}`} />;
+  return <Container data-cy={`block-${rowIndex}-${colIndex}`}>0</Container>;
 };
 
 export default Block;
