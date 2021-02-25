@@ -1,3 +1,7 @@
+export type INDEX = Exclude<NUMBERS, 9> | 0;
+
+export type BLOCK_COORDS = [INDEX, INDEX];
+
 export type GRID = [ROW, ROW, ROW, ROW, ROW, ROW, ROW, ROW, ROW];
 
 export type N = 0 | NUMBERS;
